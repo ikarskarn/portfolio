@@ -6,77 +6,98 @@ header {
     display: flex;
     flex-direction: row;
     justify-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border: 1px black solid;
 }
 
-.logo {
+.header-left {
     display: flex;
-    flex-grow: 1;
-    justify-content: left;
-    align-self: center;
+    justify-content: flex-start;
+    align-items: center;
     margin-left: 20px;
-    width: 100px;
+    width: 200px;
 }
 
-.logo-image {
-    display: flex;
-    justify-content: center;
+.logo {
     width: 50px;
     height: 50px;
 }
 
-
-header h1 {
+.header-center {
+    padding: 10px;
     display: flex;
-    flex-grow: 3;
+    flex-grow: 2;
     justify-content: center;
     align-items: center;
+    margin: 0px auto;
+    visibility: hidden;
 }
 
-header ul {
+.header-right {
     display: flex;
-    flex-direction: column;
-    margin-right: 10px;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
-    flex-grow: 1;
-    padding: 0;
-    width: 100px;
+    margin-right: 20px;
+    width: 200px;
 }
 
-header li, p {
-    margin: 1px;
+#switch-mode{
+    list-style: none;
+    margin: auto 0px;
+    padding: 2px;
 }
 
 .hero {
+    margin: 10px;
+    padding: 20px;
     align-content: center;
-    margin: auto;
-    padding: 20px 10%;
+    text-align: center;
+
+}
+
+.name {
+    border: green solid 1px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 10px 0px;
+}
+
+h2 {
+    border: red solid 1px;
+    width: 100%;
+    font-size: 3vh;
+    margin: 0px;
 }
 
 .profile-photo {
     width: 256px;
     height: 256px;
+    border-radius: 50%;
     margin: auto;
-    text-align: center;
     background-color: lightblue;
-    border: solid 1px black;
 }
 
-.hero > h2, .hero > .profile.photo, .hero > p  {
-    text-align: center;
-    font-size: 40px;
+/*temporary*/
+.profile-photo p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
 }
 
-.hero > p {
-    padding: 10px 10px;
+.skill-list {
+    padding: 10px;
     font-size: 25px;
-    margin: 20px auto;
+    list-style: none;
 }
 
-ul {
-    list-style: none;
+.skill-list li {
+    padding: 2px;
+    margin: 2px;
 }
 
 .page-links {
@@ -88,17 +109,125 @@ ul {
 }
 
 .portfolio-link {
-    height: 100px;
-    margin: 10px;
+    height: 60px;
+    width: 60%;
+    margin: 10px auto;
     background-color: darkgreen;
     color: white;
 }
 
 .aboutMe-link {
-    height: 100px;
-    margin: 10px;
+    height: 60px;
+    width: 60%;
+    margin: 10px auto;
     background-color: lightgreen;
 }
+
+@media screen and (min-width: 480px) {
+    .name {
+        display: inline-flex;
+        margin: 0px;
+        vertical-align: middle;
+        align-items: center;
+        height: 100px;
+        width: 256px;
+    }
+    
+    h2 {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        
+    }
+    
+    .profile-photo {
+        display: inline-flex;
+        margin: 0px;
+        vertical-align: middle;
+    }
+
+    .page-links {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    .portfolio-link {
+        width: 50%;
+        margin: 10px 20px 10px 15%;
+    }
+    
+    .aboutMe-link {
+        width: 50%;
+        margin: 10px 15% 10px 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero * {
+        border: 1px solid black;
+    }
+    
+    .header-center {
+        visibility: visible;
+    }
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-photo {
+        margin: 0px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .skill-list {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        vertical-align: middle;
+        width: 300px;
+        height: 300px;
+        padding: 0px;
+    }
+
+    .name, h2 {
+        display: none;
+    }
+
+    .page-links {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        padding: 0px;
+        margin-top: 50px;
+    }
+
+    .portfolio-link {
+        border: green solid 1px;
+        height: 200px;
+        width: 20%;
+        position: absolute;
+        top: -50px;
+        left: 29%;
+        right: 50%;
+        margin: 0px;        
+    }
+    
+    .aboutMe-link {
+        border: green solid 1px;
+        height: 200px;
+        width: 20%;
+        position: absolute;
+        top: -50px;
+        right: 15%;
+        left: 51%;
+        margin: 0px;
+    }
+}
+
+
 
 
 /*
