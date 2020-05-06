@@ -4,10 +4,7 @@
 
 .top-header {
     display: flex;
-    flex-direction: row;
-    justify-items: center;
-    justify-content: space-between;
-    border: 1px black solid;
+    background-color: darkgrey;
 }
 
 .header-left {
@@ -52,7 +49,6 @@
     padding: 20px;
     align-content: center;
     text-align: center;
-
 }
 
 .name {
@@ -65,7 +61,6 @@
 
 .name-header {
     width: 100%;
-    font-size: 3vh;
     margin: 0px;
 }
 
@@ -85,17 +80,6 @@
     width: 100%;
     height: 100%;
     margin: 0px;
-}
-
-.skill-list {
-    padding: 10px;
-    font-size: 25px;
-    list-style: none;
-}
-
-.skill-list li {
-    padding: 2px;
-    margin: 2px;
 }
 
 .page-links {
@@ -129,7 +113,7 @@
 
 .section-header, .port-images, .port-overview {
     padding: 20px auto;
-    border: 1px solid red;
+    padding: 5px, 5px;
     align-self: center;
     margin: 10px 5px;
 }
@@ -137,20 +121,16 @@
 .port-images {
     height: 300px;
     width: 75%;
+    border: 1px solid black;
 }
 
 .bio-overview, .port-overview {
-    text-align: justify;    
+    text-align: justify;
+    padding: 30px;    
 }
 
 .section-header, h3 {
     text-align: center;
-}
-
-.port-overview > ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
 }
 
 .port-buttons {
@@ -159,7 +139,7 @@
     margin: 5px;
 }
 
-.port-buttons > button {
+.port-buttons button {
     width: 200px;
     height: 50px;
     align-self: center;
