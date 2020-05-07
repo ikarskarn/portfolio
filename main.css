@@ -1,6 +1,9 @@
 /*
 font-family: 'Cinzel', serif;
 font-family: 'Raleway', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
 */
 
 * {
@@ -8,11 +11,11 @@ font-family: 'Raleway', sans-serif;
 }
 
 h1, h2, h3 {
-    font-family: 'Cinzel', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 p, ul {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .top-header {
@@ -54,7 +57,7 @@ p, ul {
     font-size: 16px;
 }
 
-.mode-casual {
+.switch-mode-button {
     height: 30px;
     border-radius: 5px;
     background-color: #062C44;
@@ -63,7 +66,7 @@ p, ul {
     width: 100%;
 }
 
-#switch-mode{
+#switch-mode {
     list-style: none;
     margin: auto 0px;
     padding: 2px;
@@ -76,18 +79,19 @@ p, ul {
     text-align: center;
 }
 
+.name-header {
+    margin: 20px;
+}
+
 .name {
-    font-size: 32px;
+    font-size: 30px;
     color: #062C44;
 }
 
 .profile-photo {
+    width: 75%;
     border-radius: 50%;
     border: 5px solid #062C44;
-}
-
-.name-header {
-    margin: 20px;
 }
 
 .skill-list {
@@ -128,24 +132,17 @@ p, ul {
     border-radius: 10px;
 }
 
-.port-apps {
-    background-color: #B5B5B5;
-    display: flex;
-    flex-direction: column;
-}
-
 .section-header {
     margin: 10px;
+}
+
+.section-header, h3 {
+    text-align: center;
 }
 
 #about-me-header {
     border-bottom: 2px solid #062C44;
     border-top: 2px solid #062C44;
-}
-
-#applications-header {
-    border-bottom: 2px solid #27AEE6;
-    border-top: 2px solid #27AEE6;
 }
 
 .bio-overview, .port-overview {
@@ -156,22 +153,38 @@ p, ul {
     border-bottom: 2px solid #062C44;     
 }
 
-.port-overview ul {
-    text-align: center;
-    list-style: none;
-    padding: 0;
-}
-
 .port-apps {
-    /*background-color: #27AEE6;*/
+    /*background-color: #B5B5B5;*/
+    display: flex;
+    flex-direction: column;
     background-color: #062C44;
     color: lightgrey;
     border-top: #27AEE6 solid 2px;
     border-bottom: white solid 2px;
 }
 
-.section-header, h3 {
+#applications-header {
+    border-bottom: 2px solid #27AEE6;
+    border-top: 2px solid #27AEE6;
+}
+
+.port-images {
+    display: flex;
+    flex-direction: column;
+}
+
+.port-images img {
+    width: 50%;
+    align-self: center;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px #27AEE6;
+}
+
+.port-overview ul {
     text-align: center;
+    list-style: none;
+    padding: 0;
 }
 
 .port-buttons {
@@ -182,39 +195,32 @@ p, ul {
 
 .port-buttons button {
     height: 60px;
-    width: 60%;
     margin: 10px auto;
-    background-color: white;
     color: #062C44;
     font-weight: bold;
     border-radius: 10px;
     align-self: center;
 }
 
+.try-it {
+    width: 50%;
+    background-color: #27AEE6;
+}
+
+.check-it-out {
+    width: 60%;
+    background-color: white;
+}
+
 footer {
     background-color: #27AEE6;
     text-align: center;
     padding: 10px;
-    border-bottom: 2px solid #062C44;0
+    border-bottom: 2px solid #062C44;
 }
 
 @media screen and (min-width: 480px) {
-    .name {
-        display: inline-flex;
-        margin: 0px;
-        vertical-align: middle;
-        align-items: center;
-        height: 100px;
-        width: 256px;
-    }
-    
-    .name-header {
-        width: 100%;
-        height: 50%;
-        text-align: center;
         
-    }
-    
     .profile-photo {
         display: inline-flex;
         margin: 0px;
