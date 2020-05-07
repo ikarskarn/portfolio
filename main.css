@@ -17,7 +17,9 @@ p, ul {
 
 .top-header {
     display: flex;
-    background-color: #DDDFE2;
+    background-color: #29ABE2;
+    border-top: 2px solid #062C44;
+    border-bottom: 2px solid #062C44; 
 }
 
 .header-left {
@@ -29,8 +31,8 @@ p, ul {
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    height: 70px;
+    border-radius: 50%;
 }
 
 .header-center {
@@ -49,6 +51,16 @@ p, ul {
     align-items: center;
     margin-right: 20px;
     width: 200px;
+    font-size: 16px;
+}
+
+.mode-casual {
+    height: 30px;
+    border-radius: 5px;
+    background-color: #062C44;
+    color: white;
+    height: 50px;
+    width: 100%;
 }
 
 #switch-mode{
@@ -58,41 +70,35 @@ p, ul {
 }
 
 .hero {
-    margin: 10px;
-    padding: 20px;
+    margin: 0px;
+    padding: 10px;
     align-content: center;
     text-align: center;
 }
 
 .name {
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin: 10px 0px;
-}
-
-.name-header {
-    width: 100%;
-    margin: 0px;
+    font-size: 32px;
+    color: #062C44;
 }
 
 .profile-photo {
-    width: 256px;
-    height: 256px;
     border-radius: 50%;
-    margin: auto;
-    background-color: lightblue;
+    border: 5px solid #062C44;
 }
 
-/*temporary*/
-.profile-photo p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
+.name-header {
+    margin: 20px;
+}
+
+.skill-list {
+    margin: 20px;
+}
+
+.hero ul {
+    list-style: none;
+    padding: 0;
+    font-size: 24px;
+    line-height: 32px;
 }
 
 .page-links {
@@ -100,15 +106,18 @@ p, ul {
     display: flex;
     flex-direction: column;
     margin: 0px;
-    background-color: lightgray;
+    background-color: #27AEE6;
+    border-top: 2px solid #062C44;
+    border-bottom: 2px solid #062C44; 
 }
 
 .portfolio-link {
     height: 60px;
     width: 60%;
     margin: 10px auto;
-    background-color: darkgrey;
+    background-color: #062C44;
     color: white;
+    border-radius: 10px;
 }
 
 .aboutMe-link {
@@ -116,6 +125,7 @@ p, ul {
     width: 60%;
     margin: 10px auto;
     background-color: white;
+    border-radius: 10px;
 }
 
 .port-apps {
@@ -124,22 +134,40 @@ p, ul {
     flex-direction: column;
 }
 
+.section-header {
+    margin: 10px;
+}
+/*
 .section-header, .port-images, .port-overview {
     padding: 20px auto;
     padding: 5px, 5px;
     align-self: center;
     margin: 10px 5px;
 }
+*/
 
+/*
 .port-images {
     height: 300px;
     width: 75%;
     border: 1px solid black;
 }
+*/
 
 .bio-overview, .port-overview {
-    text-align: justify;
-    padding: 30px;    
+    text-align: left;
+    padding: 0px 30px;
+    font-size: 18px;
+    line-height: 28px;
+    border-bottom: 2px solid #062C44;     
+}
+
+.port-apps {
+    /*background-color: #27AEE6;*/
+    background-color: #062C44;
+    color: lightgrey;
+    border-top: #27AEE6 solid 2px;
+    border-bottom: white solid 2px;
 }
 
 .section-header, h3 {
@@ -153,16 +181,21 @@ p, ul {
 }
 
 .port-buttons button {
-    width: 200px;
-    height: 50px;
+    height: 60px;
+    width: 60%;
+    margin: 10px auto;
+    background-color: white;
+    color: #062C44;
+    font-weight: bold;
+    border-radius: 10px;
     align-self: center;
-    margin: 5px;
 }
 
 footer {
-    background-color: lightgrey;
+    background-color: #27AEE6;
     text-align: center;
     padding: 10px;
+    border-bottom: 2px solid #062C44;0
 }
 
 @media screen and (min-width: 480px) {
