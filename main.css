@@ -137,22 +137,6 @@ p, ul {
 .section-header {
     margin: 10px;
 }
-/*
-.section-header, .port-images, .port-overview {
-    padding: 20px auto;
-    padding: 5px, 5px;
-    align-self: center;
-    margin: 10px 5px;
-}
-*/
-
-/*
-.port-images {
-    height: 300px;
-    width: 75%;
-    border: 1px solid black;
-}
-*/
 
 .bio-overview, .port-overview {
     text-align: left;
@@ -160,6 +144,12 @@ p, ul {
     font-size: 18px;
     line-height: 28px;
     border-bottom: 2px solid #062C44;     
+}
+
+.port-overview ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
 }
 
 .port-apps {
