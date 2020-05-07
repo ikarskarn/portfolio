@@ -138,6 +138,16 @@ p, ul {
     margin: 10px;
 }
 
+#about-me-header {
+    border-bottom: 2px solid #062C44;
+    border-top: 2px solid #062C44;
+}
+
+#applications-header {
+    border-bottom: 2px solid #27AEE6;
+    border-top: 2px solid #27AEE6;
+}
+
 .bio-overview, .port-overview {
     text-align: left;
     padding: 0px 30px;
