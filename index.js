@@ -38,9 +38,11 @@ function setFont() {
     if(state === 'professional') {
         $("h1, h2, h3").css({"font-family":"'Open Sans', sans-serif"});
         $("p, ul, .page-links, .port-buttons").css({"font-family":"'Roboto', sans-serif"});
+        $(".bio-overview, .port-overview").css({"font-size":"18px","line-height":"28px"})
     } else {
         $("h1, h2, h3").css({"font-family":"'Permanent Marker', cursive"});
         $("p, ul, .page-links, .port-buttons").css({"font-family":"'Patrick Hand', cursive"});
+        $(".bio-overview, .port-overview").css({"font-size":"22px","line-height":"30px"})
     }
 }
 

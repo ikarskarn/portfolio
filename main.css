@@ -115,7 +115,8 @@ p, ul, .page-links, .port-buttons {
     margin: 0px;
     background-color: #27AEE6;
     border-top: 2px solid #062C44;
-    border-bottom: 2px solid #062C44; 
+    border-bottom: 2px solid #062C44;
+    font-size: 24px; 
 }
 
 .portfolio-link {
@@ -194,6 +195,7 @@ p, ul, .page-links, .port-buttons {
     display: flex;
     flex-direction: column;
     margin: 5px;
+    font-size: 24px
 }
 
 .port-buttons button {
@@ -322,6 +324,7 @@ footer address {
         height: 250px;
         padding: 0px;
         margin-top: 50px;
+        font-size: 
     }
 
     .portfolio-link {
