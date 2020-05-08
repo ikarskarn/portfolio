@@ -89,7 +89,7 @@ p, ul {
 }
 
 .profile-photo {
-    width: 75%;
+    width: 50%;
     border-radius: 50%;
     border: 5px solid #062C44;
 }
@@ -242,9 +242,34 @@ footer {
         width: 50%;
         margin: 10px 15% 10px 20px;
     }
+
+    .port-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .port-images img {
+        width: 35%;
+        align-self: center;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 2px 2px #27AEE6;
+    }
+
+    .port-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .try-it, .check-it-out {
+        width: 35%;
+        margin: 30px;
+    }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {    
     .header-center {
         visibility: visible;
     }
@@ -285,17 +310,17 @@ footer {
 
     .portfolio-link {
         height: 200px;
-        width: 20%;
+        width: 25%;
         position: absolute;
         top: -50px;
-        left: 29%;
+        left: 25%;
         right: 50%;
-        margin: 0px;        
+        margin: 0px;       
     }
     
     .aboutMe-link {
-          height: 200px;
-        width: 20%;
+        height: 200px;
+        width: 25%;
         position: absolute;
         top: -50px;
         right: 15%;
@@ -304,7 +329,8 @@ footer {
     }
     
     .port-apps {
-        display: inline-block;
+        display: flex;
+        justify-content: column;
     }
 
     .port-apps .section-header {
@@ -312,11 +338,32 @@ footer {
         width: 80%;
     }
 
-    .port-images, .port-overview {
-        width: 35%;
+    .port-images , .port-overview {
+        width: 50%;
         display: inline-block;
         vertical-align: middle;
-        margin-left: 10%;
+        padding: 5%;
+        text-align: center;
+    }
+
+    .port-images {
+        padding: auto;
+        margin: auto;
+        border-right: 1px solid #27AEE6;
+    }
+
+    .port-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .port-images img {
+        width: 40%;
+        align-self: center;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 2px 2px #27AEE6;
     }
 
     .port-buttons {
@@ -327,6 +374,6 @@ footer {
 
     .port-buttons > button {
         width: 30%;
-        height: 150px;
+        height: 90px;
     }
 }

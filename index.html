@@ -24,7 +24,7 @@
             <div class="header-right">
                 <ul id="switch-mode">
                     <li><button type="button" class="switch-mode-button">Switch Mode</button></li>
-                    <li>current: professional</li>
+                    <li class="js-current-mode">current: professional</li>
                 </ul>
             </div>
         </header>
@@ -64,24 +64,25 @@
             <header class="section-header">
                 <h2 id="applications-header">Applications</h2>
             </header>
-            
-            <div class="port-images">
-                <img src="images/quizApp_incorrect.png" alt="3D Components Quiz Application screenshot for incorrect answer">
-                <img src="images/quizApp_results.png" alt="3D Components Quiz Application screenshot for results screen">
-            </div>
-            <div class="port-overview">
-                <h3>3D Components Quiz Application</h3>
-                <p>The 3D Components Quiz Application is an example of a minimalistic interactive quiz application built from the ground up.  It is built with semantic and a11y accessible HTML, styled with CSS, and interaction is coded in JavaScript and jQuery Libraries.</p>
-                <h3>Project Tech</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>Photoshop</li>
-                    <li>VS Code</li>
-                    <li>GitHub</li>
-                </ul>
+            <div class="port-container">
+                <div class="port-images">
+                    <img src="images/quizApp_incorrect.png" alt="3D Components Quiz Application screenshot for incorrect answer">
+                    <img src="images/quizApp_results.png" alt="3D Components Quiz Application screenshot for results screen">
+                </div>
+                <div class="port-overview">
+                    <h3>3D Components Quiz Application</h3>
+                    <p>The 3D Components Quiz Application is an example of a minimalistic interactive quiz application built from the ground up.  It is built with semantic and a11y accessible HTML, styled with CSS, and interaction is coded in JavaScript and jQuery Libraries.</p>
+                    <h3>Project Tech</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>Photoshop</li>
+                        <li>VS Code</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
             </div>
             
             <div class="port-buttons">
@@ -99,5 +100,7 @@
             </address>
         </footer>
     </main>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
