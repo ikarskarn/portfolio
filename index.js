@@ -1,5 +1,7 @@
 //add switch mode
 //add cursor
+//quiz app code: https://github.com/ikarskarn/quizApp
+//quiz app: https://ikarskarn.github.io/quizApp/
 'use strict'
 
 //control question data (intentionally global)
@@ -14,17 +16,38 @@ function handleState() {
     handleClick();
     console.log('handlestate: ' + state);
     updatePage();
+    handleButton();
 }
 
 function handleClick() {
-    console.log('handle click ran');
-    console.log('handle clicks - top: ' + state);
     $('.switch-mode-button').on('click', event => {
         console.log('handleClicks: switch mode');
         state = (state === 'casual') ? 'professional' : 'casual';
         updatePage();
     });
-    console.log('handle clicks - bottom: ' + state);
+}
+
+function handleButton() {
+    $('#js-portfolio-button').on('click', event => {
+        event.preventDefault();
+        $('html,body').animate({scrollTop: $('#portfolio-anchor').offset().top}, 'slow');
+    });
+
+    $('#js-aboutMe-button').on('click', event => {
+        event.preventDefault();
+        $('html,body').animate({scrollTop: $('#aboutMe-anchor').offset().top}, 'slow');
+    });
+    
+    $('#js-try-button').on('click', event => {
+        event.preventDefault();
+        window.open("https://ikarskarn.github.io/quizApp/", "_blank");
+        console.log('try it button clicked');
+    });
+    $('#js-check-button').on('click', event => {
+        event.preventDefault();
+        window.open("https://github.com/ikarskarn/quizApp", "_blank");
+        console.log('check it out button clicked');
+    });
 }
 
 function updatePage() {
@@ -77,6 +100,7 @@ function setPicture() {
 function setColor() {
     if(state === 'casual') {
         $(".top-header").css({"background-color":"#29ABE2","border-top":"2px solid #062C44","border-bottom":"2px solid #062C44"});
+        $(".header-center").css({"color":"#062C44"});
         $(".js-current-mode").css({"color":"black"});
         $(".switch-mode-button").css({"background-color":"#062C44","color":"white"});
         $(".hero").css({"background-color":"white"});
@@ -96,6 +120,7 @@ function setColor() {
         $("footer").css({"background-color":"#27AEE6","border-bottom":"2px solid #062C44"});
     } else {
         $(".top-header").css({"background-color":"#062C44","border-top":"2px solid #29ABE2","border-bottom":"2px solid #29ABE2"});
+        $(".header-center").css({"color":"white"});
         $(".js-current-mode").css({"color":"white"});
         $(".switch-mode-button").css({"background-color":"#29ABE2","color":"black"});
         $(".hero").css({"background-color":"lightGrey"});
