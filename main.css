@@ -3,6 +3,8 @@ font-family: 'Cinzel', serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Patrick Hand', cursive;
 
 */
 
@@ -11,11 +13,11 @@ font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Permanent Marker', cursive;
 }
 
-p, ul {
-    font-family: 'Roboto', sans-serif;
+p, ul, .page-links, .port-buttons {
+    font-family: 'Patrick Hand', cursive;
 }
 
 .top-header {
@@ -93,6 +95,7 @@ p, ul {
     border-radius: 50%;
     border: 5px solid #062C44;
 }
+
 
 .skill-list {
     margin: 20px;
@@ -219,6 +222,13 @@ footer {
     border-bottom: 2px solid #062C44;
 }
 
+footer address {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    line-height: 24px;
+}
+
 @media screen and (min-width: 480px) {
         
     .profile-photo {
@@ -266,6 +276,12 @@ footer {
     .try-it, .check-it-out {
         width: 35%;
         margin: 30px;
+    }
+
+    footer address {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
 
