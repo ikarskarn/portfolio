@@ -119,6 +119,7 @@ function setColor() {
         $(".try-it").css({"background-color":"#27AEE6"});
         $(".check-it-out").css({"background-color":"white"});
         $("footer").css({"background-color":"#27AEE6","border-bottom":"2px solid #062C44"});
+        $("footer a:link").css({"color":"darkblue"});
     } else {
         $(".top-header").css({"background-color":"#062C44","border-top":"2px solid #29ABE2","border-bottom":"2px solid #29ABE2"});
         $(".header-center").css({"color":"white"});
@@ -139,19 +140,9 @@ function setColor() {
         $(".try-it").css({"background-color":"#062C44", "color":"white"});
         $(".check-it-out").css({"background-color":"white", "color":"#062C44"});
         $("footer").css({"background-color":"#062C44", "color":"white"});
+        $("footer a:link").css({"color":"lightblue"});
+        $("footer a:visited").css({"color":"lightcoral"});
     }
-        
 }
 
 $(handleState);
-/*
-h1, h2, h3 {
-    font-family: 'Open Sans', sans-serif;
-}
-
-p, ul {
-    font-family: 'Roboto', sans-serif;
-}
-
-
-*/
