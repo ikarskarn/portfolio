@@ -157,7 +157,7 @@ p, ul, .page-links, .port-buttons {
     border-bottom: 2px solid #062C44;     
 }
 
-.port-apps {
+.port-app-3d {
     /*background-color: #B5B5B5;*/
     display: flex;
     flex-direction: column;
@@ -167,9 +167,24 @@ p, ul, .page-links, .port-buttons {
     border-bottom: white solid 2px;
 }
 
-#applications-header {
+.port-app-covid {
+    /*background-color: #B5B5B5;*/
+    display: flex;
+    flex-direction: column;
+    background-color: #27AEE6;
+    color: #062C44;
+    border-top: #062C44 solid 2px;
+    border-bottom: white solid 2px;
+}
+
+#applications-header-3d {
     border-bottom: 2px solid #27AEE6;
     border-top: 2px solid #27AEE6;
+}
+
+#applications-header-covid {
+    border-bottom: 2px solid #062C44;
+    border-top: 2px solid #062C44;
 }
 
 .port-images {
@@ -201,20 +216,33 @@ p, ul, .page-links, .port-buttons {
 .port-buttons button {
     height: 60px;
     margin: 10px auto;
-    color: #062C44;
     font-weight: bold;
     border-radius: 10px;
     align-self: center;
 }
 
-.try-it {
+.try-it-3d {
     width: 50%;
     background-color: #27AEE6;
+    color: #062C44;
 }
 
-.check-it-out {
+.check-it-out-3d {
     width: 60%;
     background-color: white;
+    color: #062C44;
+}
+
+.try-it-covid {
+    width: 50%;
+    background-color: #062C44;
+    color: white;
+}
+
+.check-it-out-covid {
+    width: 60%;
+    background-color: white;
+    color: #062C44;
 }
 
 footer {
